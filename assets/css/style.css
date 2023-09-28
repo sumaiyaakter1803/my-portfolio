@@ -1,0 +1,459 @@
+/* common codes start */
+/* Fonts */
+/* Fonts family
+    font-family: 'Jost', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container {
+    min-width: 320px;
+}
+
+.title {
+    color: #8c89a2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+}
+
+.big-title {
+    padding: 15px 0px 20px 0px;
+    color: #3f3a64;
+    font-size: 1.9rem;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+}
+
+.pera {
+    color: #696969;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Jost', sans-serif;
+}
+
+
+.btn-primary {
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #8e43e7;
+    --bs-btn-border-color: #8e43e7;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #7A21E3;
+    --bs-btn-hover-border-color: #7A21E3;
+    --bs-btn-active-bg: #8e43e7;
+    --bs-btn-active-border-color: #8e43e7;
+    transition: 0.4s ease-in-out;
+}
+
+
+.btn-outline-primary {
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-color: #8e43e7;
+    --bs-btn-border-color: #8e43e7;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #7A21E3;
+    --bs-btn-hover-border-color: #7A21E3;
+    --bs-btn-active-bg: #8e43e7;
+    --bs-btn-active-border-color: #8e43e7;
+    transition: 0.4s ease-in-out;
+}
+
+
+.carousel-indicators {
+    bottom: -110px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background: #adacac;
+    width: 1.5%;
+    height: 0.6%;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background: #7A21E3;
+}
+
+/* common codes ends */
+
+/* Nav Bar start */
+
+.navbar {
+    background: #fff;
+    z-index: 9999;
+}
+
+.custom_bg {
+    box-shadow: 0 7px 9px rgb(0 0 0 / 5%);
+}
+
+.navbar .navbar-brand {
+    color: #8E43E7;
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #3f3a64;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: 'Jost', sans-serif;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: .5s linear;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    bottom: 8px;
+    border: 1px solid transparent;
+    width: 0%;
+    transition: .5s linear;
+}
+
+.navbar .navbar-nav .nav-link:hover::before {
+    border: 1px solid #8E43E7;
+    right: 0%;
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #8E43E7;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #8E43E7;
+}
+
+
+.navbar .navbar-nav .dropdown-item {
+    color: #3f3a64;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    --bs-dropdown-link-active-bg: #fff;
+}
+
+
+.navbar .navbar-nav .dropdown-item::after {
+    content: '';
+    position: absolute;
+    right: 100%;
+    bottom: 8px;
+    border: 1px solid transparent;
+    width: 0%;
+    transition: .5s linear;
+}
+
+.navbar .navbar-nav .dropdown-item:hover::after {
+    border: 1px solid #8E43E7;
+    right: 0%;
+    width: 100%;
+}
+
+/* Nav Bar end */
+
+/* Header start */
+
+.header-section {
+    margin-bottom: 80px;
+    background: #F9F7FE;
+}
+
+.header-section .header-content h1 {
+    color: #3f3a64;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+}
+
+.header-section .header-content h2 {
+    color: #3f3a64;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Header end */
+
+/* About Section Start */
+
+.about-section {
+    padding: 80px 0px;
+    background: #fff;
+}
+
+/* About Section end */
+
+/* Resume Section start */
+
+.resume-section {
+    padding: 80px 0px;
+    background: #F9F7FE;
+}
+
+/* Resume Section end */
+
+/* Service Section start */
+
+.service-section {
+    padding: 80px 0px;
+    background: #fff;
+}
+
+.service-section .card {
+    background: #F9F7FE;
+    padding: 15px 25px;
+    border: 1px solid transparent;
+    transition: 0.5s ease-in-out;
+}
+.service-section .card:hover {
+    background: #fff;
+    border: 1px solid #757191;
+}
+
+.service-section .card .card-body .icon i, span {
+    color: #8e43e7;
+    font-size: 1.8rem;
+}
+
+
+.service-section .card .card-body .icon h4 {
+    color: #3f3a64;
+    opacity: 0.2;
+    cursor: default;
+    font-size: 3.7rem;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+}
+
+.service-section .card .card-body .icon h4:hover {
+    opacity: 0.4;
+    transition: 0.5s ease-in-out;
+}
+
+.service-section .card .card-body h5 {
+    color: #3f3a64;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+}
+
+.service-section .card .card-body h5:hover {
+    color: #8e43e7;
+    transition: 0.4s ease-in-out;
+}
+
+.service-section .card .card-body p {
+    color: #696969;
+    cursor: default;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+}
+
+.service-section .card .card-body .read {
+    color: #3f3a64;
+    cursor: default;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+    border-bottom: 2px solid #8e43e7;
+    text-decoration: none;
+}
+
+.service-section .card .card-body .read:hover {
+    color: #8e43e7;
+    transition: 0.4s ease-in-out;
+}
+
+.service-section .link-underline {
+    margin-top: 130px;
+    color: #3f3a64;
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.service-section .link-underline:hover {
+    color: #8e43e7;
+    transition: 0.4s ease-in-out;
+}
+/* Service Section start */
+
+/* Counter Section start */
+
+.counter-section {
+    padding: 80px 0px;
+    background: #F9F7FE;
+}
+.counter-section .counter-content i {
+    color: #8e43e7;
+    font-size: 2.5rem;
+    line-height: 2.5;
+}
+
+.counter-section .counter-content p {
+    color: #3f3a64;
+    font-size: 3.2rem;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+}
+
+
+/* Counter Section end */
+
+/* Testimonials Section start */
+.testimonials-section {
+    margin: 20px 0px;
+    padding: 80px 0px;
+    background: #fff;
+}
+
+.testimonials-section .card {
+    padding: 40px 30px;
+    background: #F9F7FE;
+    border: none;
+}
+
+.testimonials-section .carousel-indicators {
+    bottom: -80px;
+}
+.testimonials-section blockquote q::before {
+    color: #8E43E7;
+    font-size: 3.2rem;
+    font-family: "Merriweather", serif;
+    line-height: .8;
+    font-weight: 600;
+}
+.testimonials-section blockquote q {
+    color: #696969;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8;
+    font-family: 'Jost', sans-serif;
+    word-spacing: 4px;
+}
+
+.testimonials-section .testi-client .test-img {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.testimonials-section .testi-client .testi-details h3 {
+    color: #3f3a64;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+}
+
+.testimonials-section .testi-client .testi-details p {
+    color: #777;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+}
+/* Testimonials Section end */
+
+/* Video Section start */
+
+.video-section {
+    background: #fff;
+}
+
+.video-section .position-absolute {
+    top: 50%;
+    left: 0px;
+    right: 0px;
+}
+
+.video-section .video-bg {
+    margin: 40px 0px;
+    width: 60%;
+}
+
+.video-section .fa {
+    background: #fff;
+    font-size: 1.3rem;
+    line-height: 3;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+/* Video Section end */
+
+/* contact section start */
+
+.contact-section {
+    margin: 80px 0px;
+    background: #fff;
+}
+
+/* contact section end */
+
+/* footer section start */
+
+footer {
+    padding: 60px 0px;
+    background: #fff;
+}
+
+footer .link {
+    color: #8e43e7;
+    text-decoration: none;
+}
+
+footer .link:hover {
+    color: #6719c4;
+}
+
+footer ul li {
+    margin-left: 6px;
+    display: inline-block;
+}
+
+footer ul li a {
+    color: #aaa;
+    width: 30px;
+    font-size: 1.2rem;
+
+}
+
+footer ul li a:hover {
+    color: #8e43e7;
+    transition: .3s ease-in-out;
+
+}
+
+/* footer section end */
+
+ /* Top Button start */
+
+ .jump-up {
+    height: 50px;
+    width: 50px;
+    right: 0;
+    bottom: 130px;
+    line-height: 2;
+
+ }
+
+ /* Top Button end */

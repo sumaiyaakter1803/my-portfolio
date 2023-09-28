@@ -1,0 +1,120 @@
+@media(min-width: 0px) and (max-width: 575px) {
+
+    /* header section start */
+
+    .header-section .header-content {
+        text-align: center;
+    }
+
+    /* header section end */
+
+    /* About section start */
+
+    .about-section .about-content {
+        text-align: center;
+    }
+
+    /* About section end */
+
+    /* Resume section start */
+
+    .resume-section .resume-content  {
+        text-align: center;
+    }
+
+     /* Resume section end */
+
+    .carousel-indicators [data-bs-target] {
+        width: 10%;
+        height: 2%;
+    }
+
+    /* video section start */
+
+    .video-section .position-absolute {
+        top: 40%;
+    }
+
+    .video-section .fa {
+        background: #fff;
+        font-size: 1.2rem;
+        width: 40px;
+        height: 40px;
+        line-height: 2;
+
+    }
+    .video-section .fa:hover {
+        width: 50px;
+        height: 50px;
+        line-height: 2;
+    }
+
+    /* video section end */
+}
+
+
+@media(min-width: 576px) and (max-width: 767px) {
+
+    /* carousel start */
+
+    .carousel-indicators [data-bs-target] {
+        width: 5%;
+        height: 2%;
+    }
+
+    /* carousel end */
+
+    /* card start */
+    .service-section .card {
+        text-align: center;
+    }
+
+    .service-section .card .card-space {
+        line-height: 1.71;
+    }
+
+    /* card end */
+
+    /* video section start */
+    .video-section .position-absolute {
+        top: 40%;
+    }
+    /* video section end */
+
+    /* Jump start */
+
+    .position-absolute {
+        bottom: 150px;
+    
+     }
+
+    /* Jump end */
+
+
+    }
+    
+@media(min-width: 768px) and (max-width: 991px) {
+
+    /* card start */
+
+    .service-section .card {
+        text-align: center;
+    }
+
+    /* card end */
+
+    /* video section start */
+    .video-section .position-absolute {
+        top: 40%;
+    }
+    
+    /* Jump start */
+
+    .position-absolute {
+        bottom: 120px;
+    
+     }
+
+    /* Jump end */
+
+    }
